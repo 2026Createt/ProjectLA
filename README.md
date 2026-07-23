@@ -584,7 +584,7 @@
         <div class="pictures-grid">
             <div class="picture-card">
                 <!-- Ersetze 'pictur1.jpg' mit dem tatsächlichen Dateinamen oder Link deines Bildes -->
-                <img src="pictur1.png" alt="Project Los Angeles Impression">
+                <img src="Pictur1.png" alt="Project Los Angeles Impression">
             </div>
         </div>
     </section>
