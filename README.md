@@ -359,6 +359,33 @@
             line-height: 1.5;
         }
 
+        /* Unsere Bilder Section */
+        .pictures-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .picture-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            max-width: 700px;
+            width: 100%;
+            transition: var(--transition);
+        }
+
+        .picture-card:hover {
+            border-color: var(--border-focus);
+        }
+
+        .picture-card img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
         /* Footer */
         footer {
             background: #07090f;
@@ -413,6 +440,7 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#factions">Fraktionen</a></li>
                 <li><a href="#join">Join Guide</a></li>
+                <li><a href="#pictures">Bilder</a></li>
             </ul>
         </nav>
         <a href="https://discord.gg/yzsHbpgwVu" target="_blank" class="nav-discord-btn">
@@ -543,6 +571,20 @@
                 <div class="step-number">03</div>
                 <h3>Loslegen</h3>
                 <p>Erstelle deinen Ingame-Charakter und starte deine Rolle im Staat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unsere Bilder Section -->
+    <section id="pictures">
+        <div class="section-header">
+            <h2>Unsere Bilder</h2>
+            <p>Ein visueller Einblick in das Geschehen und die Atmosphäre auf unserem Server.</p>
+        </div>
+        <div class="pictures-grid">
+            <div class="picture-card">
+                <!-- Ersetze 'pictur1.jpg' mit dem tatsächlichen Dateinamen oder Link deines Bildes -->
+                <img src="pictur1.jpg" alt="Project Los Angeles Impression">
             </div>
         </div>
     </section>
