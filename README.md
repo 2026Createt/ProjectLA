@@ -108,7 +108,7 @@
             background: #4752c4;
         }
 
-        /* Hero Section (Clean, Typographic, No Background Image) */
+        /* Hero Section */
         .hero {
             min-height: 85vh;
             display: flex;
@@ -244,7 +244,7 @@
             margin: 0 auto;
         }
 
-        /* Features Section (Deine 3 Kernpunkte) */
+        /* Features Section */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -440,7 +440,7 @@
     <!-- Stats Bar -->
     <div class="stats-bar">
         <div class="stat-item">
-            <h3>64 / 64</h3>
+            <h3>48 / 48</h3>
             <p>Slots</p>
         </div>
         <div class="stat-item">
@@ -457,7 +457,7 @@
         </div>
     </div>
 
-    <!-- Features Section (Deine Stichpunkte) -->
+    <!-- Features Section -->
     <section id="features">
         <div class="section-header">
             <h2>Server Features</h2>
