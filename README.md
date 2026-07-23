@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Los Angeles | Next-Gen FiveM Roleplay</title>
+    <title>Project Los Angeles | FiveM Roleplay</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #00f2fe;
-            --primary-glow: rgba(0, 242, 254, 0.4);
-            --secondary: #4facfe;
-            --bg-base: #07090f;
-            --bg-card: rgba(15, 23, 42, 0.6);
-            --border-color: rgba(255, 255, 255, 0.08);
+            --primary: #ff6b00;
+            --primary-glow: rgba(255, 107, 0, 0.4);
+            --secondary: #ffaa00;
+            --bg-base: #090d16;
+            --bg-card: rgba(18, 24, 38, 0.7);
+            --border-color: rgba(255, 107, 0, 0.15);
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,29 +36,29 @@
             position: relative;
         }
 
-        /* Background Glow Effects */
+        /* LA Sunset Glow Effects */
         .bg-glow {
             position: absolute;
-            width: 500px;
-            height: 500px;
+            width: 600px;
+            height: 600px;
             background: radial-gradient(circle, var(--primary-glow) 0%, rgba(0,0,0,0) 70%);
             top: -100px;
             left: -100px;
             z-index: -1;
-            filter: blur(80px);
-            opacity: 0.5;
+            filter: blur(90px);
+            opacity: 0.6;
         }
 
         .bg-glow-2 {
             position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(79, 172, 254, 0.2) 0%, rgba(0,0,0,0) 70%);
-            top: 40%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(255, 170, 0, 0.15) 0%, rgba(0,0,0,0) 70%);
+            top: 35%;
             right: -200px;
             z-index: -1;
-            filter: blur(100px);
-            opacity: 0.4;
+            filter: blur(110px);
+            opacity: 0.5;
         }
 
         /* Navbar */
@@ -71,7 +71,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 8%;
-            background: rgba(7, 9, 15, 0.8);
+            background: rgba(9, 13, 22, 0.85);
             backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000;
@@ -140,7 +140,7 @@
             box-shadow: 0 6px 25px rgba(88, 101, 242, 0.5);
         }
 
-        /* Hero Section */
+        /* Hero Section with LA Sunset Vibe */
         .hero {
             height: 100vh;
             display: flex;
@@ -149,7 +149,7 @@
             align-items: center;
             text-align: center;
             padding: 0 20px;
-            background: linear-gradient(rgba(7, 9, 15, 0.5), rgba(7, 9, 15, 0.95)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+            background: linear-gradient(rgba(9, 13, 22, 0.65), rgba(9, 13, 22, 0.95)), url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
             position: relative;
         }
 
@@ -157,26 +157,19 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(0, 242, 254, 0.1);
-            border: 1px solid rgba(0, 242, 254, 0.3);
+            background: rgba(255, 107, 0, 0.1);
+            border: 1px solid rgba(255, 107, 0, 0.3);
             padding: 6px 16px;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
             color: var(--primary);
             margin-bottom: 25px;
-            box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
-            animation: pulse-badge 2s infinite;
-        }
-
-        @keyframes pulse-badge {
-            0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(0, 242, 254, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0); }
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.15);
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: 4.2rem;
             font-weight: 800;
             margin-bottom: 20px;
             letter-spacing: -1px;
@@ -217,7 +210,7 @@
 
         .btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #07090f;
+            color: #090d16;
             font-weight: 700;
             box-shadow: 0 4px 25px var(--primary-glow);
         }
@@ -236,20 +229,46 @@
 
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 107, 0, 0.4);
             transform: translateY(-3px);
         }
 
-        /* Features Section (USP) */
-        .features {
-            padding: 120px 8%;
-            max-width: 1350px;
+        /* Server Stats Bar */
+        .stats-bar {
+            background: rgba(18, 24, 38, 0.8);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 30px 8%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Generic Section Styling */
+        section {
+            padding: 100px 8%;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
         }
 
         .section-header h2 {
@@ -262,10 +281,11 @@
         .section-header p {
             color: var(--text-muted);
             font-size: 1.1rem;
-            max-width: 500px;
+            max-width: 550px;
             margin: 0 auto;
         }
 
+        /* Features Section (Deine 3 Kernpunkte) */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -297,7 +317,7 @@
 
         .feature-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(0, 242, 254, 0.3);
+            border-color: rgba(255, 107, 0, 0.4);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         }
 
@@ -308,8 +328,8 @@
         .icon-box {
             width: 70px;
             height: 70px;
-            background: rgba(0, 242, 254, 0.08);
-            border: 1px solid rgba(0, 242, 254, 0.2);
+            background: rgba(255, 107, 0, 0.08);
+            border: 1px solid rgba(255, 107, 0, 0.2);
             border-radius: 16px;
             display: flex;
             align-items: center;
@@ -317,7 +337,7 @@
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 25px;
-            box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.1);
         }
 
         .feature-card h3 {
@@ -332,9 +352,82 @@
             line-height: 1.7;
         }
 
+        /* Factions / Berufe Section */
+        .factions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .faction-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .faction-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .faction-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .faction-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .faction-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Guide / How-to-Join Section */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px;
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(255, 107, 0, 0.15);
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+
+        .step-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .step-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         /* Footer */
         footer {
-            background: rgba(4, 6, 10, 0.95);
+            background: rgba(6, 9, 15, 0.95);
             border-top: 1px solid var(--border-color);
             padding: 40px 8%;
             display: flex;
@@ -350,7 +443,7 @@
             color: var(--primary);
         }
 
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 968px) {
             header {
                 padding: 15px 5%;
@@ -359,15 +452,15 @@
                 display: none;
             }
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
             .hero-buttons {
                 flex-direction: column;
                 width: 100%;
                 max-width: 320px;
             }
-            .features {
-                padding: 80px 5%;
+            section {
+                padding: 70px 5%;
             }
         }
     </style>
@@ -380,15 +473,15 @@
     <!-- Header / Navbar -->
     <header>
         <a href="#" class="logo">
-            <i class="fa-solid fa-cube"></i>
+            <i class="fa-solid fa-fire"></i>
             Project <span>LA</span>
         </a>
         <nav>
             <ul>
                 <li><a href="#home">Startseite</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="https://discord.gg/yzsHbpgwVu" target="_blank">Regelwerk</a></li>
-                <li><a href="https://discord.gg/yzsHbpgwVu" target="_blank">Forum</a></li>
+                <li><a href="#factions">Fraktionen</a></li>
+                <li><a href="#join">Join Guide</a></li>
             </ul>
         </nav>
         <a href="https://discord.gg/yzsHbpgwVu" target="_blank" class="nav-discord-btn">
@@ -399,10 +492,10 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-badge">
-            <i class="fa-solid fa-circle-dot" style="font-size: 0.6rem;"></i> Next-Gen FiveM Experience
+            <i class="fa-solid fa-circle-dot" style="font-size: 0.6rem;"></i> Server Online & Bereit
         </div>
         <h1>Project <span>Los Angeles</span></h1>
-        <p>Tauche ein in eine realistische Welt mit perfekten Performance-Werten, exklusiven Systemen und einer aktiven Community. Dein neues Roleplay-Zuhause wartet.</p>
+        <p>Dein ultimatives FiveM Roleplay-Erlebnis mit kalifornischem Vibe. Erlebe einzigartige Systeme, eine faire Wirtschaft und unendliche Möglichkeiten.</p>
         <div class="hero-buttons">
             <a href="fivem://connect/IP_HIER_EINFUEGEN" class="btn btn-primary">
                 <i class="fa-solid fa-play"></i> Jetzt Verbinden
@@ -413,41 +506,116 @@
         </div>
     </section>
 
-    <!-- Features Section (Basierend auf deinen Stichpunkten) -->
-    <section class="features" id="features">
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <h3>64 / 64</h3>
+            <p>Server Slots</p>
+        </div>
+        <div class="stat-item">
+            <h3>0.0ms</h3>
+            <p>Optimierter Ping</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Custom Scripts</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Aktiver Support</p>
+        </div>
+    </div>
+
+    <!-- Features Section (Deine 3 Kernpunkte) -->
+    <section id="features">
         <div class="section-header">
             <h2>Was uns auszeichnet</h2>
-            <p>Entdecke die Säulen unseres Servers, die kompromisslosen Spielspaß garantieren.</p>
+            <p>Kompromisslose Performance und handgemachte Features für maximalen Spielspaß.</p>
         </div>
         <div class="features-grid">
             
-            <!-- Punkt 1: Hauseigene Developer -->
+            <!-- Punkt 1 -->
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fa-solid fa-code"></i>
                 </div>
                 <h3>Hauseigene Developer</h3>
-                <p>Erfahrene Entwickler in jedem Bereich sorgen dafür, dass Custom-Anfragen, Updates und Bugs blitzschnell bearbeitet werden – für ein reibungsloses Spielerlebnis.</p>
+                <p>Erfahrene Entwickler in jedem Bereich kümmern sich tagtäglich um individuelle Wünsche, Bugfixes und innovative Neuerungen direkt auf dem Server.</p>
             </div>
 
-            <!-- Punkt 2: Hoch performanter Server -->
+            <!-- Punkt 2 -->
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fa-solid fa-gauge-high"></i>
                 </div>
-                <h3>High-Performanter Server</h3>
-                <p>Maximaler Spielspaß ohne störende Lags oder Performance-Einbrüche dank modernster Server-Hardware und konstanter Optimierung im Hintergrund.</p>
+                <h3>Hoch Performanter Server</h3>
+                <p>Spüre flüssiges Gameplay ohne lästige Drops oder Lags. Unsere Hardware und Code-Struktur sind auf maximale Leistung ausgelegt.</p>
             </div>
 
-            <!-- Punkt 3: Performance & Eigenentwicklung -->
+            <!-- Punkt 3 -->
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fa-solid fa-microchip"></i>
                 </div>
                 <h3>Selbst entwickelt & Performance</h3>
-                <p>Jedes Script ist extrem performant optimiert. Ein Großteil unserer Features und Systeme wurde eigens von Grund auf neu für euch entwickelt.</p>
+                <p>Jedes Script ist bis ins Detail optimiert. Ein Großteil unserer Features stammt aus eigener Hand – exklusiv nur bei uns.</p>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Factions / Berufe Section -->
+    <section id="factions">
+        <div class="section-header">
+            <h2>Staat & Wirtschaft</h2>
+            <p>Werde Teil des Geschehens – egal ob Gesetzeshüter, Lebensretter oder Geschäftsmann.</p>
+        </div>
+        <div class="factions-grid">
+            <div class="faction-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Los Angeles Police</h3>
+                <p>Sorge für Recht und Ordnung in den Straßen von LA mit modernster Ausrüstung und Taktik.</p>
+            </div>
+            <div class="faction-card">
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <h3>Medical Center</h3>
+                <p>Rette Leben bei Einsätzen und halte die Bevölkerung gesund. Werde Teil des Rettungsdienstes.</p>
+            </div>
+            <div class="faction-card">
+                <i class="fa-solid fa-wrench"></i>
+                <h3>Mechaniker & Tuner</h3>
+                <p>Pimp die krassesten Karren auf, repariere Unfallschäden und leite deine eigene Werkstatt.</p>
+            </div>
+            <div class="faction-card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>Zivilleben & Wirtschaft</h3>
+                <p>Baue dir ein Imperium auf, gründe Unternehmen oder starte eine ehrliche Karriere im Staat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Guide Section -->
+    <section id="join">
+        <div class="section-header">
+            <h2>So startest du durch</h2>
+            <p>In drei einfachen Schritten bist du bereit für dein neues Abenteuer auf Project Los Angeles.</p>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3>Discord beitreten</h3>
+                <p>Klicke auf den Discord-Button, trete unserer Community bei und lies dir in Ruhe das Regelwerk durch.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3>FiveM öffnen</h3>
+                <p>Starte FiveM und nutze entweder unseren Direktverbindungs-Link oder suche nach "Project Los Angeles".</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3>Charakter erstellen</h3>
+                <p>Erstelle deinen eigenen Charakter, reise nach Los Angeles ein und schreibe deine eigene Geschichte.</p>
+            </div>
         </div>
     </section>
 
