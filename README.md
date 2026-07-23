@@ -1,4 +1,3 @@
-
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -10,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #ff6b00;
-            --primary-hover: #e05e00;
-            --bg-base: #0b0f17;
-            --bg-card: #121824;
-            --border-color: rgba(255, 255, 255, 0.07);
-            --border-focus: rgba(255, 107, 0, 0.3);
-            --text-main: #f1f5f9;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-base: #090d16;
+            --bg-card: #0f172a;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-focus: rgba(37, 99, 235, 0.4);
+            --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --transition: all 0.2s ease-in-out;
         }
@@ -46,7 +45,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 18px 6%;
-            background: rgba(11, 15, 23, 0.9);
+            background: rgba(9, 13, 22, 0.9);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-color);
             z-index: 1000;
@@ -118,15 +117,15 @@
             text-align: center;
             padding: 120px 20px 60px 20px;
             background-color: var(--bg-base);
-            background-image: radial-gradient(circle at 50% 15%, rgba(255, 107, 0, 0.06) 0%, transparent 55%);
+            background-image: radial-gradient(circle at 50% 15%, rgba(37, 99, 235, 0.08) 0%, transparent 55%);
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 107, 0, 0.08);
-            border: 1px solid rgba(255, 107, 0, 0.2);
+            background: rgba(37, 99, 235, 0.1);
+            border: 1px solid rgba(37, 99, 235, 0.25);
             padding: 5px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
@@ -267,7 +266,7 @@
         .icon-box {
             width: 48px;
             height: 48px;
-            background: rgba(255, 107, 0, 0.1);
+            background: rgba(37, 99, 235, 0.1);
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -387,22 +386,9 @@
         }
 
         /* Footer */
-        footer {
-            background: #07090f;
-            border-top: 1px solid var(--border-color);
-            padding: 30px 6%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 10px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        footer span {
-            color: var(--primary);
-        }
+        <footer>
+            <p>&copy; 2026 <span>Project Los Angeles</span>. Alle Rechte vorbehalten. Steht in keiner Verbindung zu Take-Two Interactive oder Rockstar Games.</p>
+        </footer>
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -431,7 +417,7 @@
     <!-- Header / Navbar -->
     <header>
         <a href="#" class="logo">
-            <i class="fa-solid fa-fire"></i>
+            <i class="fa-solid fa-shield-cat"></i>
             Project <span>LA</span>
         </a>
         <nav>
@@ -583,7 +569,6 @@
         </div>
         <div class="pictures-grid">
             <div class="picture-card">
-                <!-- Ersetze 'pictur1.jpg' mit dem tatsächlichen Dateinamen oder Link deines Bildes -->
                 <img src="Pictur1.png" alt="Project Los Angeles Impression">
             </div>
         </div>
